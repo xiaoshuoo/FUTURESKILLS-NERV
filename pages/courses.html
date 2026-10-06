@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureSkills — Курсы</title>
+  <link rel="stylesheet" href="../css/courses.css">
+</head>
+<body>
+
+  <header class="nerv-header">
+    <div class="nerv-logo">FUTURESKILLS // NERV</div>
+    <button class="nerv-burger" id="burgerBtn">МЕНЮ</button>
+    <ul class="nerv-menu" id="mainMenu">
+      <li><a href="../index.html">Главная</a></li>
+      <li><a href="courses.html" class="active">Курсы</a></li>
+      <li><a href="blog.html">Блог</a></li>
+      <li><a href="about.html">Об организации</a></li>
+      <li><a href="cabinet.html">Кабинет</a></li>
+      <li><a href="auth.html" id="pilotLink">Вход</a></li>
+    </ul>
+  </header>
+
+  <main class="nerv-wrap">
+
+    <h1 class="nerv-title">Каталог курсов</h1>
+
+    <div class="filters">
+      <button class="nerv-btn tab-on" id="btnAll">Все</button>
+      <button class="nerv-btn" id="btnFree">Бесплатные</button>
+      <button class="nerv-btn" id="btnPaid">Платные</button>
+    </div>
+
+    <p class="status" id="statusBox"></p>
+
+    <h2 class="nerv-title">Общественные науки</h2>
+    <div class="course-grid" id="socialList"></div>
+
+    <h2 class="nerv-title">Технические науки</h2>
+    <div class="course-grid" id="techList"></div>
+
+  </main>
+
+  <footer class="nerv-footer">
+    <p>© 2026 FutureSkills // MAGI SYSTEM</p>
+  </footer>
+
+  <script src="../js/courses.js"></script>
+</body>
+</html>

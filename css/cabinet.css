@@ -1,0 +1,257 @@
+/* NERV // BASE */
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+}
+
+:root {
+  --bg      : #0a0a0f;
+  --panel   : #14141c;
+  --orange  : #ff6a00;
+  --green   : #39ff14;
+  --purple  : #7b3fb5;
+  --red     : #e60012;
+  --text    : #e8e8e8;
+}
+
+body {
+  background  : var(--bg);
+  color       : var(--text);
+  font-family : "Courier New", monospace;
+  line-height : 1.5;
+}
+
+a {
+  color           : var(--orange);
+  text-decoration : none;
+}
+
+.nerv-header {
+  background      : #000;
+  border-bottom   : 3px solid var(--orange);
+  padding         : 10px 20px;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  flex-wrap       : wrap;
+}
+
+.nerv-logo {
+  color          : var(--orange);
+  font-size      : 22px;
+  font-weight    : bold;
+  letter-spacing : 3px;
+}
+
+.nerv-menu {
+  display    : flex;
+  gap        : 12px;
+  list-style : none;
+  flex-wrap  : wrap;
+}
+
+.nerv-menu a {
+  display        : block;
+  padding        : 5px 8px;
+  border         : 1px solid transparent;
+  text-transform : uppercase;
+  font-size      : 14px;
+}
+
+.nerv-menu a:hover,
+.nerv-menu a.active {
+  border     : 1px solid var(--orange);
+  background : #2a1500;
+}
+
+.nerv-burger {
+  display     : none;
+  background  : none;
+  border      : 1px solid var(--orange);
+  color       : var(--orange);
+  padding     : 6px 12px;
+  font-family : inherit;
+  cursor      : pointer;
+}
+
+.nerv-wrap {
+  max-width : 1100px;
+  margin    : 0 auto;
+  padding   : 20px;
+}
+
+.nerv-title {
+  color          : var(--orange);
+  border-left    : 6px solid var(--orange);
+  padding-left   : 10px;
+  margin         : 30px 0 15px;
+  text-transform : uppercase;
+}
+
+.nerv-card {
+  background : var(--panel);
+  border     : 1px solid var(--purple);
+  padding    : 15px;
+}
+
+.nerv-btn {
+  background     : var(--orange);
+  color          : #000;
+  border         : none;
+  padding        : 8px 14px;
+  font-family    : inherit;
+  font-weight    : bold;
+  cursor         : pointer;
+  text-transform : uppercase;
+  display        : inline-block;
+}
+
+.nerv-btn:hover {
+  background : var(--green);
+}
+
+.nerv-footer {
+  background : #000;
+  border-top : 3px solid var(--orange);
+  text-align : center;
+  padding    : 15px;
+  margin-top : 40px;
+  color      : #888;
+}
+
+/* AT-FIELD // CABINET */
+.hidden {
+  display : none;
+}
+
+.error {
+  color         : var(--red);
+  margin-bottom : 10px;
+  min-height    : 22px;
+}
+
+.ok {
+  color : var(--green);
+}
+
+.profile {
+  display               : grid;
+  grid-template-columns : 220px 1fr;
+  gap                   : 15px;
+}
+
+.photo-card {
+  text-align : center;
+}
+
+.photo-card img {
+  width      : 100%;
+  max-height : 260px;
+  object-fit : cover;
+  border     : 2px solid var(--orange);
+}
+
+.no-photo {
+  height      : 200px;
+  border      : 2px dashed var(--purple);
+  color       : #666;
+  display     : flex;
+  align-items : center;
+  justify-content : center;
+}
+
+.info-card h2 {
+  color         : var(--orange);
+  margin-bottom : 10px;
+}
+
+.info-card p {
+  margin-bottom : 5px;
+}
+
+.info-card span {
+  color : var(--green);
+}
+
+.info-card .nerv-btn {
+  margin-top : 10px;
+  background : var(--red);
+  color      : #fff;
+}
+
+.edit-card label {
+  display    : block;
+  margin-top : 10px;
+  color      : var(--green);
+}
+
+.edit-card input[type="number"] {
+  background  : #000;
+  color       : #fff;
+  border      : 1px solid var(--purple);
+  padding     : 8px;
+  font-family : inherit;
+  width       : 140px;
+}
+
+.edit-card input[type="file"] {
+  color : var(--text);
+}
+
+.edit-card .nerv-btn {
+  margin-top : 10px;
+}
+
+.table-card {
+  overflow-x : auto;
+}
+
+.table-card table {
+  width           : 100%;
+  border-collapse : collapse;
+}
+
+.table-card th,
+.table-card td {
+  border     : 1px solid #333;
+  padding    : 8px;
+  text-align : left;
+}
+
+.table-card th {
+  color      : var(--orange);
+  background : #000;
+}
+
+.mark-5 { color : var(--green);  font-weight : bold; }
+.mark-4 { color : #b6ff00;       font-weight : bold; }
+.mark-3 { color : var(--orange); font-weight : bold; }
+.mark-2 { color : var(--red);    font-weight : bold; }
+
+#typeList {
+  margin-top   : 10px;
+  padding-left : 20px;
+}
+
+/* RESPONSIVE // 700 */
+@media (max-width: 700px) {
+  .nerv-burger {
+    display : block;
+  }
+
+  .nerv-menu {
+    display : none;
+    width   : 100%;
+  }
+
+  .nerv-menu.open {
+    display        : flex;
+    flex-direction : column;
+    margin-top     : 10px;
+  }
+
+  .profile {
+    grid-template-columns : 1fr;
+  }
+}

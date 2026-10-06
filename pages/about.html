@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureSkills — Об организации</title>
+  <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+
+  <header class="nerv-header">
+    <div class="nerv-logo">FUTURESKILLS // NERV</div>
+    <button class="nerv-burger" id="burgerBtn">МЕНЮ</button>
+    <ul class="nerv-menu" id="mainMenu">
+      <li><a href="../index.html">Главная</a></li>
+      <li><a href="courses.html">Курсы</a></li>
+      <li><a href="blog.html">Блог</a></li>
+      <li><a href="about.html" class="active">Об организации</a></li>
+      <li><a href="cabinet.html">Кабинет</a></li>
+      <li><a href="auth.html" id="pilotLink">Вход</a></li>
+    </ul>
+  </header>
+
+  <main class="nerv-wrap">
+
+    <h1 class="nerv-title">Информация об организации</h1>
+
+    <p class="office-status" id="officeStatus"></p>
+
+    <div class="info-grid">
+
+      <section class="nerv-card">
+        <h2>Главный офис</h2>
+        <p>г. Токио-3, Геофронт, штаб-квартира NERV, сектор 301</p>
+        <p class="hint">Пн-Пт: 09:00 - 18:00 // режим тревоги: круглосуточно</p>
+      </section>
+
+      <section class="nerv-card">
+        <h2>Телефоны</h2>
+        <p>Командующий Икари Гэндо: <a href="tel:+74950000001">+7 (495) 000-00-01</a></p>
+        <p>Заместитель Фуюцуки Кодзо (курсы): <a href="tel:+74950000002">+7 (495) 000-00-02</a></p>
+        <p>Приёмная, Ибуки Майя: <a href="tel:+74950000003">+7 (495) 000-00-03</a></p>
+      </section>
+
+      <section class="nerv-card">
+        <h2>Социальные сети</h2>
+        <ul class="social-list">
+          <li><a href="https://vk.com/futureskills" target="_blank">ВКонтакте — NERV Pilots</a></li>
+          <li><a href="https://t.me/futureskills" target="_blank">Telegram — Cage Chat</a></li>
+          <li><a href="https://youtube.com/@futureskills" target="_blank">YouTube — MAGI Lessons</a></li>
+        </ul>
+      </section>
+
+      <section class="nerv-card">
+        <h2>Электронная почта</h2>
+        <p id="mailText">magi@futureskills.ru</p>
+        <button class="nerv-btn" id="copyBtn">Скопировать</button>
+        <p class="msg" id="copyMsg"></p>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="nerv-footer">
+    <p>© 2026 FutureSkills // MAGI SYSTEM</p>
+  </footer>
+
+  <script src="../js/about.js"></script>
+</body>
+</html>

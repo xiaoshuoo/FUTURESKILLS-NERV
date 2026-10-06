@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureSkills — Вход и регистрация</title>
+  <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+
+  <header class="nerv-header">
+    <div class="nerv-logo">FUTURESKILLS // NERV</div>
+    <button class="nerv-burger" id="burgerBtn">МЕНЮ</button>
+    <ul class="nerv-menu" id="mainMenu">
+      <li><a href="../index.html">Главная</a></li>
+      <li><a href="courses.html">Курсы</a></li>
+      <li><a href="blog.html">Блог</a></li>
+      <li><a href="about.html">Об организации</a></li>
+      <li><a href="cabinet.html">Кабинет</a></li>
+      <li><a href="auth.html" id="pilotLink" class="active">Вход</a></li>
+    </ul>
+  </header>
+
+  <main class="nerv-wrap">
+
+    <div class="auth-tabs">
+      <button class="nerv-btn tab-on" id="tabLogin">Аутентификация</button>
+      <button class="nerv-btn" id="tabReg">Регистрация пилота</button>
+    </div>
+
+    <!-- LOGIN -->
+    <section class="nerv-card auth-box" id="loginBox">
+      <h2>Вход в систему</h2>
+
+      <label for="logLogin">Логин</label>
+      <input type="text" id="logLogin" placeholder="pilot_01">
+
+      <label for="logPass">Пароль</label>
+      <input type="password" id="logPass" placeholder="********">
+
+      <p class="error" id="logError"></p>
+      <button class="nerv-btn" id="logBtn">Войти</button>
+    </section>
+
+    <!-- REGISTER -->
+    <section class="nerv-card auth-box hidden" id="regBox">
+      <h2>Регистрация</h2>
+
+      <label for="regSurname">Фамилия</label>
+      <input type="text" id="regSurname">
+
+      <label for="regName">Имя</label>
+      <input type="text" id="regName">
+
+      <label for="regPatronymic">Отчество</label>
+      <input type="text" id="regPatronymic">
+
+      <label for="regLogin">Логин</label>
+      <input type="text" id="regLogin">
+
+      <label for="regEmail">Электронная почта</label>
+      <input type="email" id="regEmail">
+
+      <label for="regPass">Пароль</label>
+      <input type="password" id="regPass">
+
+      <label for="regPass2">Подтверждение пароля</label>
+      <input type="password" id="regPass2">
+
+      <div class="rules">
+        <p>ПРАВИЛА ОРГАНИЗАЦИИ:</p>
+        <p>1. Уважать преподавателей и других учеников.</p>
+        <p>2. Не передавать доступ к аккаунту третьим лицам.</p>
+        <p>3. Не копировать и не распространять материалы курсов.</p>
+      </div>
+
+      <label class="check-line">
+        <input type="checkbox" id="regRules">
+        Я принимаю правила образовательной организации
+      </label>
+
+      <p class="error" id="regError"></p>
+      <p class="ok" id="regOk"></p>
+      <button class="nerv-btn" id="regBtn">Зарегистрироваться</button>
+    </section>
+
+  </main>
+
+  <footer class="nerv-footer">
+    <p>© 2026 FutureSkills // MAGI SYSTEM</p>
+  </footer>
+
+  <script src="../js/auth.js"></script>
+</body>
+</html>

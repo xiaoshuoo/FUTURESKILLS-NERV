@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureSkills — Главная</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <header class="nerv-header">
+    <div class="nerv-logo">FUTURESKILLS // NERV</div>
+    <button class="nerv-burger" id="burgerBtn">МЕНЮ</button>
+    <ul class="nerv-menu" id="mainMenu">
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><a href="pages/courses.html">Курсы</a></li>
+      <li><a href="pages/blog.html">Блог</a></li>
+      <li><a href="pages/about.html">Об организации</a></li>
+      <li><a href="pages/cabinet.html">Кабинет</a></li>
+      <li><a href="pages/auth.html" id="pilotLink">Вход</a></li>
+    </ul>
+  </header>
+
+  <main class="nerv-wrap">
+
+    <section class="hero">
+      <p class="hero-code">MAGI SYSTEM // ONLINE</p>
+      <h1>FutureSkills</h1>
+      <p>Частная образовательная организация. Учись онлайн или приходи к нам в центр — выбирай свой путь.</p>
+      <a href="pages/courses.html" class="nerv-btn">Перейти к курсам</a>
+    </section>
+
+    <h2 class="nerv-title">Новости организации</h2>
+    <div class="news-grid">
+      <article class="nerv-card">
+        <span class="news-date">01.10.2026</span>
+        <h3>Открыт набор на осенние курсы</h3>
+        <p>Стартовал приём заявок на курсы по программированию и иностранным языкам. Места ограничены.</p>
+      </article>
+      <article class="nerv-card">
+        <span class="news-date">25.09.2026</span>
+        <h3>Новая лаборатория 3D-моделирования</h3>
+        <p>В главном офисе появилась лаборатория с мощными компьютерами и 3D-принтерами для практики.</p>
+      </article>
+      <article class="nerv-card">
+        <span class="news-date">15.09.2026</span>
+        <h3>Бесплатные уроки по обществознанию</h3>
+        <p>Для всех пользователей платформы открыт бесплатный курс подготовки к экзаменам.</p>
+      </article>
+    </div>
+
+    <h2 class="nerv-title">Наши курсы</h2>
+    <div class="tabs">
+      <button class="nerv-btn tab-on" id="btnOnline">Онлайн</button>
+      <button class="nerv-btn" id="btnOffline">Офлайн</button>
+    </div>
+    <div class="course-grid" id="courseList"></div>
+
+    <h2 class="nerv-title">Рейтинг</h2>
+    <div class="rating-box">
+
+      <div class="nerv-card org-card">
+        <h3>Рейтинг организации</h3>
+        <p class="org-score" id="orgScore">4.70</p>
+        <p>Голосов: <span id="orgVotes">120</span></p>
+        <select id="voteSelect">
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        <button class="nerv-btn" id="voteBtn">Оценить</button>
+        <p class="msg" id="voteMsg"></p>
+      </div>
+
+      <div class="nerv-card teacher-card">
+        <h3>Лучшие педагоги</h3>
+        <table>
+          <thead>
+            <tr><th>Педагог</th><th>Предмет</th><th>Оценка</th></tr>
+          </thead>
+          <tbody id="teacherBody"></tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="nerv-footer">
+    <p>© 2026 FutureSkills // MAGI SYSTEM</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

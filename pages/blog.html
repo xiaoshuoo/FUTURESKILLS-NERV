@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureSkills — Блог</title>
+  <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+
+  <header class="nerv-header">
+    <div class="nerv-logo">FUTURESKILLS // NERV</div>
+    <button class="nerv-burger" id="burgerBtn">МЕНЮ</button>
+    <ul class="nerv-menu" id="mainMenu">
+      <li><a href="../index.html">Главная</a></li>
+      <li><a href="courses.html">Курсы</a></li>
+      <li><a href="blog.html" class="active">Блог</a></li>
+      <li><a href="about.html">Об организации</a></li>
+      <li><a href="cabinet.html">Кабинет</a></li>
+      <li><a href="auth.html" id="pilotLink">Вход</a></li>
+    </ul>
+  </header>
+
+  <main class="nerv-wrap">
+
+    <h1 class="nerv-title">Блог FutureSkills</h1>
+
+    <!-- POST 1 -->
+    <article class="nerv-card post" id="post1">
+      <img src="https://picsum.photos/seed/code/800/320" alt="Программирование">
+      <h2>Как начать изучать программирование с нуля</h2>
+      <p class="short">Многие думают, что программирование — это что-то очень сложное. На самом деле начать может каждый...</p>
+      <div class="full hidden" id="fullText1">
+        <p id="text1">Многие думают, что программирование — это что-то очень сложное и доступное только избранным. На самом деле начать может каждый, у кого есть компьютер и желание учиться. Первым делом выберите один язык и не прыгайте между разными. Для новичка отлично подходят Python и JavaScript, потому что у них понятный синтаксис и много бесплатных материалов. Занимайтесь каждый день хотя бы по тридцать минут: регулярность важнее длинных редких занятий. Не бойтесь ошибок, ведь каждая найденная ошибка делает вас опытнее. Пробуйте писать маленькие программы: калькулятор, список дел, простую игру. Когда появится уверенность, переходите к своему первому проекту. На курсах FutureSkills вас ждут понятные видеоуроки, практические задания и проверка работ от преподавателей, которые всегда готовы помочь.</p>
+      </div>
+      <button class="nerv-btn" id="readBtn1">Читать полностью</button>
+
+      <div class="actions">
+        <button class="act-btn" id="likeBtn1">❤ Лайк: <span id="likeCount1">0</span></button>
+        <button class="act-btn" id="reactFire1">🔥 <span id="fire1">0</span></button>
+        <button class="act-btn" id="reactWow1">😮 <span id="wow1">0</span></button>
+        <button class="act-btn" id="reactUp1">👍 <span id="up1">0</span></button>
+        <button class="act-btn" id="shareBtn1">Поделиться</button>
+      </div>
+      <p class="msg" id="shareMsg1"></p>
+
+      <div class="comments">
+        <h3>Комментарии</h3>
+        <div id="commentList1"></div>
+        <input type="text" id="commentInput1" placeholder="Ваш комментарий...">
+        <button class="nerv-btn" id="commentBtn1">Отправить</button>
+        <p class="error" id="commentError1"></p>
+      </div>
+    </article>
+
+    <!-- POST 2 -->
+    <article class="nerv-card post" id="post2">
+      <img src="https://picsum.photos/seed/china/800/320" alt="Китайский язык">
+      <h2>Китайский язык: первые шаги</h2>
+      <p class="short">Китайский язык кажется пугающим из-за иероглифов и тонов, но при правильном подходе он осваивается шаг за шагом...</p>
+      <div class="full hidden" id="fullText2">
+        <p id="text2">Китайский язык кажется пугающим из-за иероглифов и тонов, но при правильном подходе он осваивается шаг за шагом. Начните с произношения: в китайском четыре тона, и от них зависит смысл слова. Затем переходите к пиньиню, системе записи звуков латиницей, которая помогает читать и говорить задолго до знакомства с иероглифами. Учите иероглифы постепенно, по пять-десять в день, и обязательно прописывайте их от руки, так они запоминаются лучше. Старайтесь слушать живую речь: песни, подкасты, короткие видео. Не стесняйтесь говорить вслух, даже если выходит неидеально. На наших курсах группы небольшие, а преподаватели объясняют сложные темы простыми словами и дают много разговорной практики. Через пару месяцев вы сможете представиться и поддержать простую беседу.</p>
+      </div>
+      <button class="nerv-btn" id="readBtn2">Читать полностью</button>
+
+      <div class="actions">
+        <button class="act-btn" id="likeBtn2">❤ Лайк: <span id="likeCount2">0</span></button>
+        <button class="act-btn" id="reactFire2">🔥 <span id="fire2">0</span></button>
+        <button class="act-btn" id="reactWow2">😮 <span id="wow2">0</span></button>
+        <button class="act-btn" id="reactUp2">👍 <span id="up2">0</span></button>
+        <button class="act-btn" id="shareBtn2">Поделиться</button>
+      </div>
+      <p class="msg" id="shareMsg2"></p>
+
+      <div class="comments">
+        <h3>Комментарии</h3>
+        <div id="commentList2"></div>
+        <input type="text" id="commentInput2" placeholder="Ваш комментарий...">
+        <button class="nerv-btn" id="commentBtn2">Отправить</button>
+        <p class="error" id="commentError2"></p>
+      </div>
+    </article>
+
+    <!-- POST 3 -->
+    <article class="nerv-card post" id="post3">
+      <img src="https://picsum.photos/seed/law/800/320" alt="Юридическая грамотность">
+      <h2>Юридическая грамотность для каждого</h2>
+      <p class="short">Юридическая грамотность нужна каждому человеку, независимо от профессии и возраста. Мы ежедневно сталкиваемся с договорами...</p>
+      <div class="full hidden" id="fullText3">
+        <p id="text3">Юридическая грамотность нужна каждому человеку, независимо от профессии и возраста. Мы ежедневно сталкиваемся с договорами: покупаем товары, арендуем жильё, подписываем согласия на обработку данных. Если не читать документы внимательно, можно потерять деньги или время. Знание своих прав помогает отстоять их спокойно и вежливо. Например, потребитель имеет право вернуть некачественный товар, а работник вправе получать зарплату вовремя и в полном размере. Полезно знать, где искать официальные тексты законов и как обратиться в нужную организацию. На курсе юридической грамотности мы разбираем реальные ситуации, учимся составлять простые заявления и претензии, а также распознавать недобросовестные условия в договорах. Занятия проходят в удобном формате, а все материалы остаются у вас.</p>
+      </div>
+      <button class="nerv-btn" id="readBtn3">Читать полностью</button>
+
+      <div class="actions">
+        <button class="act-btn" id="likeBtn3">❤ Лайк: <span id="likeCount3">0</span></button>
+        <button class="act-btn" id="reactFire3">🔥 <span id="fire3">0</span></button>
+        <button class="act-btn" id="reactWow3">😮 <span id="wow3">0</span></button>
+        <button class="act-btn" id="reactUp3">👍 <span id="up3">0</span></button>
+        <button class="act-btn" id="shareBtn3">Поделиться</button>
+      </div>
+      <p class="msg" id="shareMsg3"></p>
+
+      <div class="comments">
+        <h3>Комментарии</h3>
+        <div id="commentList3"></div>
+        <input type="text" id="commentInput3" placeholder="Ваш комментарий...">
+        <button class="nerv-btn" id="commentBtn3">Отправить</button>
+        <p class="error" id="commentError3"></p>
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="nerv-footer">
+    <p>© 2026 FutureSkills // MAGI SYSTEM</p>
+  </footer>
+
+  <script src="../js/blog.js"></script>
+</body>
+</html>
